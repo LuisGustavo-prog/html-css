@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: grey;
+            margin: 0%;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.411);
+        }
+
+        nav >  a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 50px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            text-transform: capitalize;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 1px 1px 5px 1px black;
+            text-shadow: 100px;
+        }
+
+        article {
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color: rgb(156, 165, 165);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: right;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="filmes">
+            <p>Esportes filmes e alguma outra coisa</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>noticias do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores culpa aspernatur, eaque ut doloremque ex. Deleniti voluptatibus praesentium voluptates optio fugit natus, sit fugiat, mollitia sed sint ab tempore saepe!</p>
+                <aside>
+                    <p>Artigo escrito por alguem aí</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus atque inventore fuga ab sapiente at repellat totam ducimus ipsa veniam velit reiciendis, distinctio, sit mollitia voluptatibus explicabo provident hic sed!</p>
+                </aside>
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis officia voluptas modi recusandae numquam voluptatum, sed est tenetur nesciunt consequatur? Nobis quidem similique voluptate animi sunt repellat cum reprehenderit. Amet.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvido por luis</p>
+    </footer>    
+</body>
+</html>

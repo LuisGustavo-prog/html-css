@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseu do elemento</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        a{
+        /*
+        É possivel mudar a cor de tudo até links.
+        */
+            color: aquamarine;
+        }
+
+       a:active{
+        /*
+        É usado quando se segura a palavra, exemplo: o link que pode ser segurado.
+        */
+           color: red;
+       }
+
+       a:hover{
+        color: grey;
+       }
+
+       .ipo::after{
+        /*
+        É usado para escrever as coisas usando o css sem o html,
+        as tags para fazer isso é befoore e after.
+        */
+        content: 'io';
+       }
+
+       .ipo::before{
+        content: 'oi';
+       }
+    </style>
+</head>
+<body>
+    <h1>personalizando link</h1>
+    <ul>
+        <li><a href=" https://www.bing.com/ck/a?!&&p=8723f01751ca85962211dfd73fc04de2a7f82ca939d65c85b14c248d38d99ba6JmltdHM9MTcyOTQ2ODgwMA&ptn=3&ver=2&hsh=4&fclid=2ed23559-edb9-621e-362a-2046ec3d6360&psq=twitterr&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8&ntb=1" target="_blank" rel="external">Twitter</a></li>
+
+        <li class="ipo"><a href="https://www.bing.com/ck/a?!&&p=8fb9bde6031334c1c048cb4c75e829a1c902dffbaf957d0ef2668bee1542f824JmltdHM9MTcyOTQ2ODgwMA&ptn=3&ver=2&hsh=4&fclid=2ed23559-edb9-621e-362a-2046ec3d6360&psq=youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vP2hsPXB0&ntb=1"target="_blank" rel="external">Youtube</a></li>
+
+        <li><a href="https://www.bing.com/ck/a?!&&p=336699a23cca6de1f7c24e316a50842004869020a65e58886d62eafd7d2f45c5JmltdHM9MTcyOTQ2ODgwMA&ptn=3&ver=2&hsh=4&fclid=2ed23559-edb9-621e-362a-2046ec3d6360&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1" target="_blank" rel="external">instagram</a></li>
+    </ul>
+</body>
+</html>

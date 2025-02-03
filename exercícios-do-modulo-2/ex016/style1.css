@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to bottom,#9C7EBA, #AA88C4, #AA88C4, #CC80AE, #DF91BB, #DD97A2, #EC526C, #F14C5A, #EE515A, #F5A699, #EA9580, #EFC49A, #ECAD6A );
+    {height: 100%;}
+}
