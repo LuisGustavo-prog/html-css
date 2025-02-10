@@ -24,12 +24,30 @@
             border: 1px solid black;
             padding: 8px;
         }
+
+        col.cnome {
+            background-color: gray;
+        }
+
+        .vermelho {
+            background-color: rgb(255, 0, 0);
+        }
+
+        .amarelo {
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
     <h1>Exercício de tabela</h1>
 
     <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho">
+            <col class="amarelo">
+            <col class="vermelho">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">nome</th>
@@ -49,7 +67,7 @@
             <td>28</td>
             <td>Programador</td>
         </tr>
-        <tr>
+        <tr class="destaque">
             <td>Gustavo</td>
             <td>M</td>
             <td>42</td>

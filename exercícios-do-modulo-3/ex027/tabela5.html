@@ -30,14 +30,16 @@
         .center {
             text-align: center;
         }
-        .color {
+        .color, .color-center, .left {
             background-color: rgb(175, 175, 175);
             color: white;
         }
         .color-center {
             text-align: center;
-            background-color: rgb(175, 175, 175);
-            color: white;
+        }
+
+        .left {
+            text-align: left;
         }
     </style>
 </head>
@@ -50,7 +52,7 @@
             <tr>
                 <th scope="col" rowspan="2" class="color">Área</th>
                 <th scope="col" rowspan="3" class="color">Disciplina</th>
-                <th scope="col" colspan="2" class="color">Notas</th>
+                <th scope="colgroup" colspan="2" class="color">Notas</th>
                 <th scope="col" rowspan="2" class="color">Média</th>
             </tr>
             <tr>
@@ -85,7 +87,7 @@
                 <td class="center">0.0</td>
             </tr>
             <tr>
-                <td colspan="4" class="color">Média de Exatas</td>
+                <th scope="row" colspan="4"  class="left">Média de Exatas</th>
                 <td class="color-center">0.0</td>
             </tr>
             <tr>
@@ -102,7 +104,7 @@
                 <td class="center">0.0</td>
             </tr>
             <tr>
-                <td colspan="4" class="color">Média de Humanos</td>
+                <th scope="row" colspan="4" class="left">Média de Humanos</th>
                 <td class="color-center" >0.0</td>
             </tr>
         </tbody>
