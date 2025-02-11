@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uso do iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>faça sua escolha</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium aspernatur minima maxime necessitatibus incidunt, pariatur veniam reiciendis ut dignissimos voluptatum inventore explicabo, nulla voluptatem id quisquam qui tenetur ad. Laborum?</p>
+
+    <ul>
+        <li><a href="paginas-extra/pag001.html" target="frame">Primeiro item</a></li>
+        <li><a href="paginas-extra/pag002.html" target="frame">Segundo item</a></li>
+        <li><a href="paginas-extra/pag003.html" target="frame">Terceiro item</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque asperiores laborum debitis voluptate quaerat accusamus itaque animi ad, fugiat, assumenda nobis, explicabo voluptas eius ratione delectus maxime. Id, inventore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur optio adipisci impedit asperiores quibusdam, ex quidem voluptatem possimus tempora, autem delectus reprehenderit dicta, amet perferendis cum! Dolor dolorum culpa quam!</p>
+
+    <iframe name="frame" srcdoc="<h1>escolha uma das alternativas acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, expedita! Debitis reprehenderit minus cum obcaecati excepturi doloremque. Ea labore corrupti nisi, laudantium similique error aliquam a numquam, iste officiis minima!</p><img scr='ghfghfghfhfgh.png '>" id="tela">
+        <p>Desculpa, seu navegador não é compatível</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, expedita! Debitis reprehenderit minus cum obcaecati excepturi doloremque. Ea labore corrupti nisi, laudantium similique error aliquam a numquam, iste officiis minima!</p>
+</body>
+</html>
